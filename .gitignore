@@ -1,0 +1,66 @@
+# ============================================================
+#  CafeRecomp — .gitignore
+#  NUNCA commitar assets da Nintendo nem código extraído!
+# ============================================================
+
+# --- Arquivos do jogo (DMCA) ---
+game/
+dump/
+extracted/
+*.rpx
+*.rpl
+*.szs
+*.bfres
+*.byaml
+*.bars
+*.bfstm
+*.bfsar
+*.gtx
+
+# --- Saída do recompilador (gerada por máquina, não source) ---
+recomp_out/
+generated/
+*.recomp.cpp
+*.recomp.h
+
+# --- Build ---
+build/
+build-*/
+cmake-build-*/
+out/
+*.cmake
+!CMakeLists.txt
+CMakeCache.txt
+CMakeFiles/
+
+# --- Binários ---
+*.exe
+*.elf
+*.out
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+CafeRecomp
+CafeAnalyse
+
+# --- IDE ---
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.suo
+*.user
+*.sln.docinfo
+.vs/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Temporários ---
+*.tmp
+*.bak
+*.orig
+*.log
